@@ -9,13 +9,14 @@
 
 .header_desc ul {
     display: flex;
-    align-content: flex-end;
+    align-self: flex-end;
     column-gap: 25px;
+    margin: 24px;
 }
 .header_desc ul li {
     list-style-type: none;
     font-size: 20px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: 2s;
     cursor: pointer;
 }
@@ -28,3 +29,8 @@
     border-color: #212529;
 }
      */
+
+.header_desc ul li a {
+    text-decoration: none;
+    color: #212529;
+}

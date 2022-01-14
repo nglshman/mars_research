@@ -1,16 +1,18 @@
 import './App.css';
-import Header from './header.js'
-import Weather from './weather';
-import MarsRover from './marsRover';
+import Header from './components/header.js';
+import {Routes, Route} from 'react-router-dom';
+import Weather from './components/weather';
+import MarsRover from './components/marsRover';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
-      <header className="App-header">
-        <Weather />
-        <MarsRover />
-      </header>
+        <Routes>
+         <Route path="weather" element={<Weather />} />
+         <Route path="mars_rover" element={<MarsRover />} />
+        </Routes>
+       
     </div>
   );
 }
