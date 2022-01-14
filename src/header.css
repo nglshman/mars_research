@@ -1,3 +1,30 @@
-.header h1 {
+.header {
     text-transform: capitalize;
 }
+
+.header_desc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_desc ul {
+    display: flex;
+    align-content: flex-end;
+    column-gap: 25px;
+}
+.header_desc ul li {
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 1px solid transparent;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.header_desc ul li:hover {
+    border-color: #212529;
+    }
+
+/* .header_desc ul li::after {
+    border-color: #212529;
+}
+     */
